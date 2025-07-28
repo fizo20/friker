@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Profile</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="font-Be-Vietnam-Pro">
+  <!-- Bar Section -->
+  <section class="text-white bg-mycolor">
+    <div class="flex items-center justify-center p-4">
+      <h2>Free Courses <i class="fa-solid fa-star text-amber-400"></i> Sale Ends Soon, Get it Now</h2>
+      <img src="images/Icon.png" class="ml-5" alt="Icon">
+    </div>
+  </section>
+
+  <!-- Sticky Header + Mobile Navbar -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="flex items-center justify-between p-4 lg:px-12">
+      <div class="flex items-center gap-4">
+        <img src="images/image 48.png" class="h-10" alt="Logo">
+      </div>
+      <button id="mobile-menu-button" class="text-xl lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="items-center justify-between hidden w-full lg:flex">
+        <ul class="flex gap-8 ml-10">
+          <li><a href="#" class="px-5 py-3">Home</a></li>
+          <li><a href="#" class="px-5 py-3">Courses</a></li>
+          <li><a href="#" class="px-5 py-3">Contact</a></li>
+        </ul>
+        <ul class="flex items-center gap-4">
+          <li>
+            <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName"
+              class="flex items-center text-sm font-medium text-gray-900 rounded-full pe-1 hover:text-mycolor focus:ring-4 focus:ring-gray-100"
+              type="button">
+              <img class="w-10 h-10 rounded-full me-2" src="images/Avatar.png" alt="user photo">
+              Bonnie Green
+              <svg class="w-2.5 h-2.5 ms-3" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <div id="dropdownAvatarName"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+              <div class="px-4 py-3 text-sm text-gray-900">
+                <div class="font-medium">Parent</div>
+                <div class="truncate">name@flowbite.com</div>
+              </div>
+              <ul class="py-2 text-sm text-gray-700">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a></li>
+              </ul>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Menu Content -->
+    <div id="mobile-menu" class="hidden px-4 pb-4 lg:hidden">
+      <ul class="flex flex-col gap-2">
+        <li><a href="#" class="block px-4 py-2">Home</a></li>
+        <li><a href="#" class="block px-4 py-2">Courses</a></li>
+        <li><a href="#" class="block px-4 py-2">Contact</a></li>
+      </ul>
+      <div class="mt-4">
+        <div class="flex items-center">
+          <img class="w-10 h-10 rounded-full me-2" src="images/Avatar.png" alt="user photo">
+          <span>Bonnie Green</span>
+        </div>
+        <ul class="mt-2 text-sm">
+          <li><a href="#" class="block px-4 py-2">Dashboard</a></li>
+          <li><a href="#" class="block px-4 py-2">Settings</a></li>
+          <li><a href="#" class="block px-4 py-2">Earnings</a></li>
+          <li><a href="#" class="block px-4 py-2">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="p-4 bg-gray-100 lg:px-16 lg:py-10">
+    <div class="flex flex-col gap-6 lg:flex-row">
+      <!-- Left Column -->
+      <div class="flex flex-col gap-6 lg:w-2/3">
+        <div class="p-6 bg-white shadow-sm rounded-2xl">
+          <div class="flex justify-between text-sm font-semibold">
+            <div>Register Kids</div>
+            <div><a href="select-kid.html"><i class="p-1 text-white rounded-full fa-solid fa-plus bg-mycolor"></i></a></div>
+          </div>
+          <div class="mt-4 border-b border-gray-300"></div>
+          <div class="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="flex flex-col items-center p-4 text-center border border-gray-100 shadow-lg rounded-2xl">
+              <img src="images/Frame 1618868856.png" alt="">
+              <h2 class="mt-2 text-sm font-semibold">Adeniji Matilda</h2>
+              <p class="text-sm">Learning Yorùbá for Children (Intro Class)</p>
+            </div>
+            <div class="flex flex-col items-center p-4 text-center border border-gray-100 shadow-lg rounded-2xl">
+              <img src="images/Frame 1618868856.png" alt="">
+              <h2 class="mt-2 text-sm font-semibold">Adeniji Matilda</h2>
+              <p class="text-sm">Learning Yorùbá for Children (Intro Class)</p>
+            </div>
+            <div class="flex flex-col items-center p-4 text-center border border-gray-100 shadow-lg rounded-2xl">
+              <img src="images/Frame 1618868856.png" alt="">
+              <h2 class="mt-2 text-sm font-semibold">Adeniji Matilda</h2>
+              <p class="text-sm">Learning Yorùbá for Children (Intro Class)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-white shadow-lg rounded-2xl">
+          <h2 class="mb-4 text-sm font-semibold">Billing History</h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm">
+                <p>Learning Yorùbá for Children (Intro Class)</p>
+                <p class="font-semibold">Adeniji Matilda</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-semibold"># 30,000</p>
+                <p class="text-sm">25/01/2025</p>
+              </div>
+              <div class="mt-2 border-b border-gray-200"></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm">
+                <p>Learning Yorùbá for Children (Intro Class)</p>
+                <p class="font-semibold">Adeniji Matilda</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-semibold"># 30,000</p>
+                <p class="text-sm">25/01/2025</p>
+              </div>
+              <div class="mt-2 border-b border-gray-200"></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm">
+                <p>Learning Yorùbá for Children (Intro Class)</p>
+                <p class="font-semibold">Adeniji Matilda</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-semibold"># 30,000</p>
+                <p class="text-sm">25/01/2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="flex flex-col gap-6 lg:w-1/3">
+        <div class="p-6 text-center bg-white shadow-lg rounded-2xl">
+          <h2 class="mb-4 text-sm font-semibold">Your Profile</h2>
+          <img src="images/image (7).png" class="mx-auto mb-2" alt="Profile">
+          <h2 class="text-sm font-semibold">John Doe</h2>
+          <p class="text-xs text-gray-500">Parent</p>
+          <div class="my-4 border-b border-gray-300"></div>
+          <div class="space-y-2 text-center ">
+            <p class="text-sm text-gray-800"><i class="fa-solid fa-envelope me-2 "></i>Johndoe@gmail.com</p>
+            <p class="text-sm text-gray-800"><i class="fa-solid fa-phone me-2"></i>(234) 000 000 0000</p>
+            <div class="mt-4 text-red-500"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</div>
+          </div>
+        </div>
+        <div class="flex p-4 text-white rounded-lg bg-slate-900">
+          <div class="w-1/2">
+            <p class="mb-1 text-xs">-SUPPORT</p>
+            <p class="mb-4 text-sm font-semibold">Easy access to support if needed.</p>
+            <a href="#" class="px-4 py-2 text-sm text-white bg-pink-700 rounded">Chat us</a>
+          </div>
+          <div class="flex justify-end w-1/2">
+            <img src="images/image 70.png" alt="Support">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>

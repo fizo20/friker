@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm email</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+<body class=" font-Be-Vietnam-Pro">
+
+
+
+        
+
+<!-- Modal toggle
+<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Toggle modal
+</button> -->
+
+<!-- Main modal -->
+ 
+<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed items-center justify-center block my-20 overflow-x-hidden overflow-y-auto align-middle bg-gray-50 md:inset-0 mx-120">
+    <div class="relative w-full max-w-md max-h-full p-4 ">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+<div class="flex flex-col py-8 bg-white rounded-lg" >
+        <div class="text-center "> <i class="p-4 text-purple-400 bg-purple-200 fa-solid fa-envelope rounded-4xl"></i> </div>
+        <div class="mt-4 mb-4 text-center">
+          <h2 class="text-2xl font-bold">Please check your email.</h2> 
+          <p class="text-sm">We've sent a code to Afubiodun@mail.com</p> 
+        </div>
+        
+      <form class="flex flex-col items-center justify-center mt-4">
+          <div class="flex mb-2 space-x-4 rtl:space-x-reverse">
+          <div>
+          <label for="code-1" class="sr-only">First code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-next="code-2" id="code-1" class="block w-12 h-12 py-4 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolordark:focus:border-mycolor" required />
+          </div>
+          <div>
+          <label for="code-2" class="sr-only">Second code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-1" data-focus-input-next="code-3" id="code-2" class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolor:focus:border-mycolor" required />
+          </div>
+          <div>
+          <label for="code-3" class="sr-only">Third code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-2" data-focus-input-next="code-4" id="code-3" class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolor dark:focus:border-mycolor" required />
+          </div>
+          <div>
+          <label for="code-4" class="sr-only">Fourth code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-3" data-focus-input-next="code-5" id="code-4" class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolor dark:focus:border-mycolor" required />
+          </div>
+          <div>
+          <label for="code-5" class="sr-only">Fifth code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-4" data-focus-input-next="code-6" id="code-5" class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolor dark:focus:border-mycolor" required />
+          </div>
+          <div>
+          <label for="code-6" class="sr-only">Sixth code</label>
+          <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-5" id="code-6" class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-mycolor focus:border-mycolor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mycolor dark:focus:border-mycolor" required />
+          </div>
+          </div>
+          <p id="helper-text-explanation" class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          Don't get a code? 
+          <a href="#" class="underline text-mycolor">Click to resend</a>
+          </p>
+
+      </form>
+
+      <button class="py-2 mt-4 text-white rounded-sm mx-25 bg-mycolor hover:bg-purple-900">Confirm</button>
+
+
+        
+      </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+  </body>
+  </html>

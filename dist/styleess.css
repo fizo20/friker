@@ -1,0 +1,29 @@
+  
+  /* promo section css */
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 12s linear infinite;
+  }
+
+  .paused {
+    animation-play-state: paused;
+  }
+
+/* stats section css */
+    .text-label::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* native language section */
+    .nl-label {
+    transition: opacity 0.3s ease;
+  }

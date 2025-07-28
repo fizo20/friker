@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo class 2</title>
+  <link href="./style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="font-Be-Vietnam-Pro">
+
+  <!-- Bar Section -->
+  <section>
+    <div class="flex items-center justify-center p-4 text-white my-custom-style">
+      <h2>Free Courses <i class="bg-transparent fa-solid fa-star text-mycolor"></i> Sale Ends Soon, Get it Now</h2>
+      <img src="images/Icon.png" class="ml-5" alt="Icon" />
+    </div>
+  </section>
+
+  <!-- Sticky Header and Navbar -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="flex items-center justify-between max-w-screen-xl p-4 mx-auto">
+      <!-- Logo and Links -->
+      <div class="flex items-center gap-8">
+        <img src="images/image 48.png" alt="Logo" class="h-10" />
+        <ul class="hidden gap-8 md:flex">
+          <li><a href="#" class="px-3 py-2">Home</a></li>
+          <li><a href="#" class="px-3 py-2">Courses</a></li>
+          <li><a href="#" class="px-3 py-2">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Buttons -->
+      <div class="hidden gap-6 md:flex">
+        <a href="#" class="px-4 py-2">Sign Up</a>
+        <a href="#" class="px-4 py-2 text-white rounded my-custom-style">Login</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="flex-col items-start hidden px-6 pb-4 space-y-2  md:hidden">
+      <a href="#" class="block w-full py-2">Home</a>
+      <a href="#" class="block w-full py-2">Courses</a>
+      <a href="#" class="block w-full py-2">Contact</a>
+      <a href="#" class="block w-full py-2">Sign Up</a>
+      <a href="#" class="block w-full py-2 text-center text-white rounded my-custom-style">Login</a>
+    </div>
+  </header>
+
+  <!-- Our Courses Section -->
+  <section class="bg-gray-50">
+    <div class="flex flex-col md:flex-row">
+      <div class="px-6 py-10 text-2xl font-bold border-b border-gray-200 md:w-1/3 md:px-16">
+        <h2>Explore Our Demo Classes</h2>
+      </div>
+      <div class="px-6 py-8 border-b border-gray-200 md:w-2/3 md:px-0">
+        <p class="text-sm"></p>
+      </div>
+    </div>
+    <div class="h-8 bg-gray-50"></div>
+  </section>
+
+  <!-- Congrats Section -->
+  <section class="px-4 py-8 bg-gray-200">
+    <div class="flex justify-center">
+      <div class="flex flex-col px-6 py-6 text-center bg-white rounded-lg w-full md:w-[500px]">
+        <h2 class="py-2 text-2xl font-bold">You're All Set!🎉</h2>
+        <p class="py-4 text-sm">Thank you for signing up! Check your email for the class link and get ready for a fun and engaging language learning experience. If you don’t see the email, check your spam folder or contact our support team. See you in class! 🚀</p>
+        <button class="py-3 mt-2 mb-4 text-sm text-white rounded-sm bg-mycolor">Start Class</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="bg-gray-100">
+    <div class="flex flex-col justify-between max-w-screen-xl px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Column 1 -->
+      <div class="flex flex-col w-full space-y-4 md:w-1/3">
+        <img src="images/image 48.png" alt="Logo" class="h-10 w-18" />
+        <ul class="space-y-2 text-sm">
+          <li><a href="#"><i class="fa-solid fa-envelope"></i> Info@fricalearn.com</a></li>
+          <li><a href="#"><i class="fa-solid fa-phone"></i> +44 735 166 2748</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i> 3a, High Street Gillingham Kent ME7 5AA</a></li>
+        </ul>
+        <div>
+          <p class="pb-2 text-sm font-bold">Social Profiles</p>
+          <div class="flex space-x-2">
+            <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-facebook"></i>
+            <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-twitter"></i>
+            <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="flex flex-col w-full md:w-1/3">
+        <ul class="space-y-2 text-sm">
+          <li class="font-bold"><a href="#">Quick links</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Yoruba Courses</a></li>
+          <li><a href="#">Igbo Courses</a></li>
+          <li><a href="#">Hausa Courses</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="flex flex-col w-full md:w-1/3">
+        <ul class="space-y-2 text-sm">
+          <li class="font-bold"><a href="#">Legals</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Frequently Asked Questions</a></li>
+          <li><a href="#">Our Goals</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="py-4 text-sm text-center bg-gray-100">
+      © FricaLearn All Rights Reserved by <a href="#" class="text-mycolor">FRICALEARN</a>.
+    </div>
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>

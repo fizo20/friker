@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>verify email</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="font-Be-Vietnam-Pro">
+
+  <!-- Bar Section -->
+  <section>
+    <div class="flex flex-col items-center justify-center gap-2 p-4 text-center text-white sm:flex-row my-custom-style font-Be-Vietnam-Pro">
+      <h2>Free Courses <i class="bg-transparent fa-solid fa-star text-amber-400"></i> Sale Ends Soon, Get it Now</h2>
+      <img src="images/Icon.png" class="w-6 h-6 ml-0 sm:ml-5">
+    </div>
+  </section>
+
+  <!-- Nav Section -->
+  <section class="">
+    <div class="flex flex-col items-center justify-between gap-4 m-2 mx-6 lg:flex-row lg:mx-12">
+      <div class="flex flex-col items-center gap-6 sm:flex-row lg:gap-12">
+        <img src="images/image 48.png" class="w-18">
+        <ul class="flex flex-col gap-4 sm:flex-row lg:gap-12 ">
+          <li><a href="#" class="px-5 py-3">Home</a></li>
+          <li><a href="#" class="px-5 py-3">Courses</a></li>
+          <li><a href="#" class="px-5 py-3 rounded-sm">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex flex-col gap-4 sm:flex-row lg:gap-12">
+          <li><a href="#" class="px-5 py-3 rounded-sm">Sign Up</a></li>
+          <li><a href="#" class="px-5 py-3 text-white rounded-sm my-custom-style">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- Email Verification Section -->
+<section class="px-4 py-10 bg-gray-200 sm:px-10 lg:px-40">
+  <div class="flex flex-col items-center py-8 bg-white rounded-lg">
+    <div class="text-center">
+      <i class="p-4 text-purple-400 bg-purple-200 rounded-full fa-solid fa-envelope"></i>
+    </div>
+    <div class="mt-4 mb-4 text-center">
+      <h2 class="text-2xl font-bold">Please check your email.</h2>
+      <p class="text-sm">We've sent a code to Afubiodun@mail.com</p>
+    </div>
+
+    <form class="flex flex-col items-center justify-center w-full mt-4">
+      <div class="flex flex-wrap justify-center gap-2 mb-2">
+        <input type="tel" maxlength="1" id="code-1" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+        <input type="tel" maxlength="1" id="code-2" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+        <input type="tel" maxlength="1" id="code-3" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+        <input type="tel" maxlength="1" id="code-4" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+        <input type="tel" maxlength="1" id="code-5" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+        <input type="tel" maxlength="1" id="code-6" autocomplete="one-time-code"
+          class="block w-12 h-12 py-3 text-sm font-extrabold text-center text-gray-900 bg-white border border-gray-300 rounded-lg code-input focus:ring-mycolor focus:border-mycolor"
+          required />
+      </div>
+      <p id="helper-text-explanation" class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+        Didn't get a code?
+        <a href="confirm-modal.html" class="underline text-mycolor">Click to resend</a>
+      </p>
+    </form>
+
+    <button class="px-6 py-2 mt-4 text-white rounded-sm my-custom-style hover:bg-purple-900">
+      <a href="Login.html">Confirm</a>
+    </button>
+  </div>
+</section>
+
+
+  <!-- Footer section -->
+  <section>
+    <div class="px-6 py-10 bg-white lg:px-24">
+      <div class="flex flex-col justify-between gap-10 md:flex-row">
+
+        <div class="flex flex-col max-w-sm">
+          <img src="images/image 48.png" class="w-20 mb-4">
+          <ul class="space-y-2 text-sm">
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> Info@fricalearn.com</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> +44 735 166 2748</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 3a, High Street Gillingham Kent ME7 5AA</a></li>
+          </ul>
+          <ul class="mt-4">
+            <li class="pb-3 text-sm font-bold">Social Profiles</li>
+            <li class="flex gap-2">
+              <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-facebook"></i>
+              <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-twitter"></i>
+              <i class="p-2 bg-gray-200 rounded-sm fa-brands fa-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col">
+          <ul class="space-y-2 text-sm">
+            <li class="pb-2 font-bold">Quick links</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Yoruba Courses</a></li>
+            <li><a href="#">Igbo Courses</a></li>
+            <li><a href="#">Hausa Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col">
+          <ul class="space-y-2 text-sm">
+            <li class="pb-2 font-bold">Legals</li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="#">Our Goals</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4 text-sm text-center bg-white">© FricaLearn All Rights Reserved by <a href="#" class="text-mycolor">FRICALEARN.</a></div>
+  </section>
+ 
+ 
+ 
+  
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</body>
+
+</html>

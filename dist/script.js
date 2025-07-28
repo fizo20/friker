@@ -323,3 +323,5 @@ window.addEventListener("DOMContentLoaded", () => {
    // 👇 Expand first FAQ if it's on the page (won't break if it's missing)
   const firstButton = document.querySelector("#faq-accordion button");
   if (firstButton) firstButton.click();
+
+

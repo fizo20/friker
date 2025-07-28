@@ -139,14 +139,36 @@
  
  
  
-  
-  
+  <script>
+      window.addEventListener("DOMContentLoaded", () => {
+ 
+  // 👇 Verification code input auto-jump
+  const inputs = document.querySelectorAll(".code-input");
+
+  inputs.forEach((input, index) => {
+    input.addEventListener("input", () => {
+      const value = input.value;
+      if (value.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Backspace" && input.value === "" && index > 0) {
+        inputs[index - 1].focus();
+      }
+    });
+  });
+
+  console.log("✅ Auto-input logic initialized.");
+});
+
+  </script>
+  <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-
-  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.tailwindcss.com"></script>

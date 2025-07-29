@@ -69,7 +69,8 @@
 
       </form>
 
-      <button class="py-2 mt-4 text-white rounded-sm mx-25 bg-mycolor hover:bg-purple-900">Confirm</button>
+ <a href="#" class="inline-block py-2 mt-4 text-center text-white rounded-sm mx-25 bg-mycolor hover:bg-purple-900">Confirm</a>
+
 
 
         
@@ -84,9 +85,35 @@
 
     
 
-    
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <script>
+  document.querySelectorAll('input[data-focus-input-init]').forEach((input) => {
+    input.addEventListener('input', (e) => {
+      const value = e.target.value;
+      if (!/^\d$/.test(value)) {
+        e.target.value = ''; // Only allow one digit
+        return;
+      }
+      const nextId = e.target.getAttribute('data-focus-input-next');
+      if (nextId) {
+        const nextInput = document.getElementById(nextId);
+        if (nextInput) nextInput.focus();
+      }
+    });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && e.target.value === '') {
+        const prevId = e.target.getAttribute('data-focus-input-prev');
+        if (prevId) {
+          const prevInput = document.getElementById(prevId);
+          if (prevInput) prevInput.focus();
+        }
+      }
+    });
+  });
+</script>
+
   </body>
   </html>

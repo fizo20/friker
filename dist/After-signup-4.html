@@ -32,9 +32,9 @@
         </button>
       </div>
       <ul class="hidden gap-12 ml-10 md:flex">
-        <li><a href="#" class="px-5 py-3">Home</a></li>
-        <li><a href="#" class="px-5 py-3">Courses</a></li>
-        <li><a href="#" class="px-5 py-3">Contact</a></li>
+        <li><a href="index.html" class="px-5 py-3">Home</a></li>
+        <li><a href="our-courses.html" class="px-5 py-3">Courses</a></li>
+        <li><a href="contact.html" class="px-5 py-3">Contact</a></li>
       </ul>
       <div class="hidden md:block">
         <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" class="flex items-center text-sm font-medium text-gray-900">
@@ -50,12 +50,12 @@
             <div class="truncate">name@flowbite.com</div>
           </div>
           <ul class="py-2 text-sm">
-            <li><a href="#" class="block px-4 py-2">Dashboard</a></li>
+            <li><a href="Dashboard.html" class="block px-4 py-2">Dashboard</a></li>
             <li><a href="#" class="block px-4 py-2">Settings</a></li>
             <li><a href="#" class="block px-4 py-2">Earnings</a></li>
           </ul>
           <div class="py-2">
-            <a href="#" class="block px-4 py-2 text-sm">Sign out</a>
+            <a href="Login.html" class="block px-4 py-2 text-sm">Sign out</a>
           </div>
         </div>
       </div>
@@ -64,68 +64,78 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden">
       <ul class="flex flex-col gap-4">
-        <li><a href="#" class="block px-4 py-2">Home</a></li>
-        <li><a href="#" class="block px-4 py-2">Courses</a></li>
-        <li><a href="#" class="block px-4 py-2">Contact</a></li>
+        <li><a href="index.html" class="block px-4 py-2">Home</a></li>
+        <li><a href="our-courses.html" class="block px-4 py-2">Courses</a></li>
+        <li><a href="contact.html" class="block px-4 py-2">Contact</a></li>
       </ul>
     </div>
   </section>
 
-  <!-- Payment Section -->
-  <section class="px-4 py-20 bg-gray-100 md:px-20">
-    <div class="max-w-3xl p-6 mx-auto bg-white rounded-lg sm:p-10">
-      <div class="mb-6 text-center">
-        <h2 class="mb-2 text-3xl font-semibold">Payment Details</h2>
-        <p class="mb-6 text-sm">Make payment into the account below and upload your receipt for confirmation.</p>
-        <div class="flex justify-center gap-4 py-4 bg-gray-100 rounded">
-       <button id="btn-naira" onclick="showPayment('naira')" class="p-2 text-white rounded bg-mycolor">Naira Account</button>
-        <button id="btn-pounds" onclick="showPayment('pounds')" class="p-2 text-black bg-gray-200 rounded">Pounds Account</button>
-
-
-        </div>
+<!-- Payment Section -->
+<section class="px-4 py-20 bg-gray-100 md:px-20">
+  <div class="max-w-3xl p-6 mx-auto bg-white rounded-lg sm:p-10">
+    <div class="mb-6 text-center">
+      <h2 class="mb-2 text-3xl font-semibold">Payment Details</h2>
+      <p class="mb-6 text-sm">Make payment into the account below and upload your receipt for confirmation.</p>
+      <div class="flex justify-center gap-4 py-4 bg-gray-100 rounded">
+        <a href="javascript:void(0)" onclick="showPayment('naira')" id="btn-naira"
+          class="block p-2 text-center text-white rounded bg-mycolor">Naira Account</a>
+        <a href="javascript:void(0)" onclick="showPayment('pounds')" id="btn-pounds"
+          class="block p-2 text-center text-black bg-gray-200 rounded">Pounds Account</a>
       </div>
-
-      <!-- Naira Payment -->
-      <div id="naira-section">
-        <div class="p-6 mb-6 text-center rounded-lg bg-gray-50">
-          <div class="py-2 mb-4 text-sm bg-purple-200 border border-gray-300 rounded">Bank Name</div>
-          <div class="mb-4 text-3xl font-semibold">₦ 30,000</div>
-          <div class="py-4 text-sm bg-white border border-gray-200 rounded-sm">
-            <div class="mb-2">Account Number</div>
-            <div>Account Name</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pounds Payment -->
-      <div id="pounds-section" class="hidden">
-        <div class="p-6 mb-6 text-center rounded-lg bg-gray-50">
-          <div class="py-2 mb-4 text-sm bg-purple-200 border border-gray-300 rounded">Bank Name</div>
-          <div class="mb-4 text-3xl font-semibold">£ 15.50</div>
-          <div class="py-4 text-sm bg-white border border-gray-200 rounded-sm">
-            <div class="mb-2">Account Number</div>
-            <div>Account Name</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Upload Form -->
-      <form class="space-y-6">
-        <div>
-          <label class="block mb-2 text-sm font-medium text-gray-700">Upload Receipt</label>
-          <div class="relative">
-            <input type="text" placeholder="File Name" id="file-name" readonly class="w-full py-2 pl-4 pr-24 text-sm border rounded-md bg-gray-50" />
-            <label class="absolute inset-y-0 right-0 flex items-center px-4 text-sm text-blue-500 cursor-pointer hover:bg-slate-200">
-              Upload
-              <input type="file" class="hidden" onchange="document.getElementById('file-name').value = this.files[0]?.name || ''" />
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="w-full py-2 text-white bg-mycolor hover:bg-purple-950"><a href="After-signup-6.html">Proceed</a></button>
-        <button type="button" class="w-full py-2 hover:bg-gray-400 hover:text-white"><a href="After-signup-3.html">Cancel</a> </button>
-      </form>
     </div>
-  </section>
+
+    <!-- Naira Payment -->
+    <div id="naira-section">
+      <div class="p-6 mb-6 text-center rounded-lg bg-gray-50">
+        <div class="py-2 mb-4 text-sm bg-purple-200 border border-gray-300 rounded">Bank Name</div>
+        <div class="mb-4 text-3xl font-semibold">₦ 30,000</div>
+        <div class="py-4 text-sm bg-white border border-gray-200 rounded-sm">
+          <div class="mb-2">Account Number</div>
+          <div>Account Name</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pounds Payment -->
+    <div id="pounds-section" class="hidden">
+      <div class="p-6 mb-6 text-center rounded-lg bg-gray-50">
+        <div class="py-2 mb-4 text-sm bg-purple-200 border border-gray-300 rounded">Bank Name</div>
+        <div class="mb-4 text-3xl font-semibold">£ 15.50</div>
+        <div class="py-4 text-sm bg-white border border-gray-200 rounded-sm">
+          <div class="mb-2">Account Number</div>
+          <div>Account Name</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload Form -->
+    <form class="space-y-6">
+      <div>
+        <label class="block mb-2 text-sm font-medium text-gray-700">Upload Receipt</label>
+        <div class="relative">
+          <input type="text" placeholder="File Name" id="file-name" readonly
+            class="w-full py-2 pl-4 pr-24 text-sm border rounded-md bg-gray-50" />
+          <label
+            class="absolute inset-y-0 right-0 flex items-center px-4 text-sm text-blue-500 cursor-pointer hover:bg-slate-200">
+            Upload
+            <input type="file" class="hidden"
+              onchange="document.getElementById('file-name').value = this.files[0]?.name || ''" />
+          </label>
+        </div>
+      </div>
+
+      <!-- Proceed as anchor -->
+      <a href="After-signup-6.html"
+        class="block w-full py-2 text-center text-white rounded-md bg-mycolor hover:bg-purple-950">Proceed</a>
+
+      <!-- Cancel as anchor -->
+      <a href="After-signup-3.html"
+        class="block w-full py-2 text-center border border-gray-300 rounded-md hover:bg-gray-400 hover:text-white">Cancel</a>
+    </form>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="mt-8 bg-white border-t border-gray-200">

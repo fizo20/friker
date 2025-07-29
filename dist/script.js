@@ -1,5 +1,8 @@
 console.log("✅ script.js is loaded!");
 
+    // 👇 Expand first FAQ if it's on the page (won't break if it's missing)
+  const firstButton = document.querySelector("#faq-accordion button");
+  if (firstButton) firstButton.click();
 /* Payment toggle */
  /*  window.showPayment = function (type) {
     const naira = document.getElementById('naira-section');
@@ -33,6 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
     once: false, // Allow animation on both scroll down and up
   });
 
+ 
+
   /* Accordion Toggle Script */
   const firstButton = document.querySelector("#faq-accordion button");
   if (firstButton) firstButton.click();
@@ -61,7 +66,10 @@ window.addEventListener("DOMContentLoaded", () => {
       content.style.maxHeight = content.scrollHeight + "px";
       button.classList.add("open");
     }
+
   };
+
+  
 
   /* Mobile menu */
   document.getElementById("menu-toggle").addEventListener("click", function () {
@@ -320,8 +328,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-   // 👇 Expand first FAQ if it's on the page (won't break if it's missing)
-  const firstButton = document.querySelector("#faq-accordion button");
-  if (firstButton) firstButton.click();
 
+
+
+  
 

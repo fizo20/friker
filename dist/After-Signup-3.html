@@ -40,9 +40,9 @@
 
       <!-- Desktop Menu -->
       <ul class="hidden gap-12 -ml-120 md:flex ">
-        <li><a href="#" class="px-5 py-3">Home</a></li>
-        <li><a href="#" class="px-5 py-3">Courses</a></li>
-        <li><a href="#" class="px-5 py-3">Contact</a></li>
+        <li><a href="index.html" class="px-5 py-3">Home</a></li>
+        <li><a href="our-courses.html" class="px-5 py-3">Courses</a></li>
+        <li><a href="contact.html" class="px-5 py-3">Contact</a></li>
       </ul>
 
       <!-- Avatar dropdown -->
@@ -61,12 +61,12 @@
             <div class="truncate">name@flowbite.com</div>
           </div>
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Dashboard</a></li>
+            <li><a href="Dashboard.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Dashboard</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Settings</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Earnings</a></li>
           </ul>
           <div class="py-2">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600">Sign out</a>
+            <a href="Login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600">Sign out</a>
           </div>
         </div>
       </div>
@@ -75,19 +75,19 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden px-4 pb-4 md:hidden">
       <ul class="flex flex-col gap-4">
-        <li><a href="#" class="block px-4 py-2">Home</a></li>
-        <li><a href="#" class="block px-4 py-2">Courses</a></li>
-        <li><a href="#" class="block px-4 py-2">Contact</a></li>
+        <li><a href="index.html" class="block px-4 py-2">Home</a></li>
+        <li><a href="our-courses.html" class="block px-4 py-2">Courses</a></li>
+        <li><a href="confirm-modal.html" class="block px-4 py-2">Contact</a></li>
         <li class="pt-2 mt-2 border-t border-gray-200">
           <div class="flex items-center gap-2">
             <img class="w-8 h-8 rounded-full" src="images/Avatar.png" alt="Avatar">
             <span>Bonnie Green</span>
           </div>
           <ul class="mt-2 text-sm">
-            <li><a href="#" class="block px-2 py-1">Dashboard</a></li>
+            <li><a href="Dashboard.html" class="block px-2 py-1">Dashboard</a></li>
             <li><a href="#" class="block px-2 py-1">Settings</a></li>
             <li><a href="#" class="block px-2 py-1">Earnings</a></li>
-            <li><a href="#" class="block px-2 py-1">Sign out</a></li>
+            <li><a href="Login.html" class="block px-2 py-1">Sign out</a></li>
           </ul>
         </li>
       </ul>
@@ -95,47 +95,64 @@
   </section>
 
 
-  <!-- Kids Detail Form -->
-  <section class="px-4 py-10 bg-gray-100 md:px-60">
-    <div class="flex flex-col bg-white rounded-lg">
-      <div class="mt-8 text-center">
-        <h2 class="mb-2 text-3xl font-semibold">Enter Kids Details</h2>
-        <p class="max-w-xl mx-auto mb-2 text-sm">Once you complete payment, we&#39;ll email your child&#39;s login details, class schedule, and learning materials—check your inbox or spam folder! 🚀</p>
+ <!-- Kids Detail Form -->
+<section class="px-4 py-10 bg-gray-100 md:px-60">
+  <div class="flex flex-col bg-white rounded-lg">
+    <div class="mt-8 text-center">
+      <h2 class="mb-2 text-3xl font-semibold">Enter Kids Details</h2>
+      <p class="max-w-xl mx-auto mb-2 text-sm">
+        Once you complete payment, we&#39;ll email your child&#39;s login details, class schedule, and learning materials—check your inbox or spam folder! 🚀
+      </p>
+    </div>
+
+    <form class="p-6 space-y-6 bg-white rounded-lg shadow-md">
+      <div>
+        <label for="full-name" class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor" />
       </div>
-      <form class="p-6 space-y-6 bg-white rounded-lg shadow-md">
-        <div>
-          <label for="full-name" class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
-          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor" />
-        </div>
-        <div>
-          <label for="birthdate" class="block mb-2 text-sm font-medium text-gray-700">Birthdate</label>
-          <div class="relative">
-            <input type="text" id="birthdate" name="birthdate" placeholder="e.g. December 29" class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor" />
-            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
+
+      <div>
+        <label for="birthdate" class="block mb-2 text-sm font-medium text-gray-700">Birthdate</label>
+        <div class="relative">
+          <input type="text" id="birthdate" name="birthdate" placeholder="e.g. December 29"
+            class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor" />
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
           </div>
         </div>
-        <div>
-          <label for="gender" class="block mb-2 text-sm font-medium text-gray-700">Gender</label>
-          <select id="gender" name="gender" class="w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor">
-            <option value="" disabled selected>Select Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div>
-          <button type="submit" class="w-full px-4 py-2 text-white bg-mycolor hover:bg-purple-950 focus:outline-none focus:ring-1 focus:ring-mycolor focus:ring-offset-1"><a href="After-signup-7.html">Proceed</a></button>
-        </div>
-        <div>
-          <button type="button" class="flex justify-center w-full px-4 py-2 hover:text-white hover:bg-gray-400"><a href="select.html"></a> Cancel</button>
-        </div>
-      </form>
-    </div>
-  </section>
+      </div>
+
+      <div>
+        <label for="gender" class="block mb-2 text-sm font-medium text-gray-700">Gender</label>
+        <select id="gender" name="gender"
+          class="w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-mycolor focus:border-mycolor">
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Proceed Button replaced with Anchor -->
+      <a href="After-signup-7.html"
+        class="block w-full px-4 py-2 text-center text-white rounded-md bg-mycolor hover:bg-purple-950 focus:outline-none focus:ring-1 focus:ring-mycolor focus:ring-offset-1">
+        Proceed
+      </a>
+
+      <!-- Cancel Button replaced with Anchor -->
+      <a href="select.html"
+        class="flex justify-center w-full px-4 py-2 text-center border border-gray-300 rounded-md hover:text-white hover:bg-gray-400">
+        Cancel
+      </a>
+    </form>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <section class="px-4">
